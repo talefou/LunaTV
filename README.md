@@ -44,8 +44,10 @@
 - [技术栈](#技术栈)
 - [部署](#部署)
 - [配置文件](#配置文件)
+- [订阅](#订阅)
 - [自动更新](#自动更新)
 - [环境变量](#环境变量)
+- [客户端](#客户端)
 - [AndroidTV 使用](#AndroidTV-使用)
 - [Roadmap](#roadmap)
 - [安全与隐私提醒](#安全与隐私提醒)
@@ -202,6 +204,10 @@ custom_category 支持的自定义分类已知如下：
 
 MoonTV 支持标准的苹果 CMS V10 API 格式。
 
+## 订阅
+
+将完整的配置文件 base58 编码后提供 http 服务即为订阅链接，可在 MoonTV 后台/Helios 中使用。
+
 ## 自动更新
 
 可借助 [watchtower](https://github.com/containrrr/watchtower) 自动更新镜像容器
@@ -246,6 +252,10 @@ NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE 选项解释：
 - cmliussss-cdn-tencent：由浏览器请求豆瓣 CDN，该 CDN 由 [CMLiussss](https://github.com/cmliu) 搭建，并由腾讯云 cdn 提供加速
 - cmliussss-cdn-ali：由浏览器请求豆瓣 CDN，该 CDN 由 [CMLiussss](https://github.com/cmliu) 搭建，并由阿里云 cdn 提供加速
 - custom: 用户自定义 proxy，由 NEXT_PUBLIC_DOUBAN_IMAGE_PROXY 定义
+
+## 客户端
+
+v100.0.0 以上版本可配合 [Selene](https://github.com/MoonTechLab/Selene) 使用，移动端体验更加友好，数据完全同步
 
 ## AndroidTV 使用
 
